@@ -3,51 +3,68 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Official support and privacy information for Undercover, the party word game for 3–10 players.">
-    <title>Undercover — Party Game Support</title>
+    <meta name="description" content="Official support and privacy information for Undercover, the party word game for 3–10 players." data-i18n-content="home.metaDescription">
+    <title data-i18n="home.title">Undercover — Party Game Support</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="i18n.js" defer></script>
 </head>
 <body>
     <header class="site-header">
         <a class="brand" href="index.html">Undercover</a>
-        <nav aria-label="Main navigation">
-            <a href="support.html">Support</a>
-            <a href="privacy.html">Privacy</a>
-        </nav>
+        <div class="header-actions">
+            <nav data-i18n-aria-label="common.mainNavigation" aria-label="Main navigation">
+                <a href="support.html" data-i18n="common.support">Support</a>
+                <a href="privacy.html" data-i18n="common.privacy">Privacy</a>
+            </nav>
+            <label class="language-control">
+                <span class="visually-hidden" data-i18n="common.language">Language</span>
+                <span aria-hidden="true">🌐</span>
+                <select class="language-select" data-language-select aria-label="Language">
+                    <option value="en">English</option>
+                    <option value="zh-Hans">简体中文</option>
+                    <option value="zh-Hant">繁體中文</option>
+                    <option value="ja">日本語</option>
+                    <option value="de">Deutsch</option>
+                    <option value="fr">Français</option>
+                    <option value="es">Español</option>
+                    <option value="ko">한국어</option>
+                </select>
+            </label>
+        </div>
     </header>
 
     <main>
         <section class="hero">
-            <p class="eyebrow">A party word game for 3–10 players</p>
-            <h1>Find the spy.<br>Trust no one.</h1>
-            <p class="intro">Undercover is a local pass-and-play game for friends and family, featuring 500+ word pairs, themed packs, Secret Powers, and the optional Mr. White role.</p>
+            <p class="eyebrow" data-i18n="home.eyebrow">A party word game for 3–10 players</p>
+            <h1 data-i18n-html="home.heading">Find the spy.<br>Trust no one.</h1>
+            <p class="intro" data-i18n="home.intro">Undercover is a local pass-and-play game for friends and family, featuring 500+ word pairs, themed packs, Secret Powers, and the optional Mr. White role.</p>
             <div class="actions">
-                <a class="button primary" href="support.html">Get Support</a>
-                <a class="button secondary" href="privacy.html">Privacy Policy</a>
+                <a class="button primary" href="support.html" data-i18n="home.getSupport">Get Support</a>
+                <a class="button secondary" href="privacy.html" data-i18n="common.privacyPolicy">Privacy Policy</a>
             </div>
         </section>
 
         <section class="features" aria-label="Game features">
             <article>
                 <span>3–10</span>
-                <h2>Players</h2>
-                <p>Play together in person using one device.</p>
+                <h2 data-i18n="home.players">Players</h2>
+                <p data-i18n="home.playersDescription">Play together in person using one device.</p>
             </article>
             <article>
                 <span>500+</span>
-                <h2>Word Pairs</h2>
-                <p>Explore varied themes and replayable rounds.</p>
+                <h2 data-i18n="home.wordPairs">Word Pairs</h2>
+                <p data-i18n="home.wordPairsDescription">Explore varied themes and replayable rounds.</p>
             </article>
             <article>
-                <span>Offline</span>
-                <h2>Private Play</h2>
-                <p>No account, advertising, or analytics required.</p>
+                <span data-i18n="home.offline">Offline</span>
+                <h2 data-i18n="home.privatePlay">Private Play</h2>
+                <p data-i18n="home.privatePlayDescription">No account, advertising, or analytics required.</p>
             </article>
         </section>
     </main>
 
     <footer>
-        <p>© 2026 Undercover. All rights reserved.</p>
+        <p data-i18n="common.copyright">© 2026 Undercover. All rights reserved.</p>
         <p><a href="mailto:fluffypartygame.support@gmail.com">fluffypartygame.support@gmail.com</a></p>
     </footer>
 </body>

@@ -3,58 +3,62 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Get help with Undercover, the party word game.">
-    <title>Support — Undercover</title>
+    <meta name="description" content="Get help with Undercover, the party word game." data-i18n-content="support.metaDescription">
+    <title data-i18n="support.title">Support — Undercover</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="i18n.js" defer></script>
 </head>
 <body>
     <header class="site-header">
         <a class="brand" href="index.html">Undercover</a>
-        <nav aria-label="Main navigation">
-            <a class="active" href="support.html">Support</a>
-            <a href="privacy.html">Privacy</a>
-        </nav>
+        <div class="header-actions">
+            <nav data-i18n-aria-label="common.mainNavigation" aria-label="Main navigation">
+                <a class="active" href="support.html" data-i18n="common.support">Support</a>
+                <a href="privacy.html" data-i18n="common.privacy">Privacy</a>
+            </nav>
+            <label class="language-control"><span class="visually-hidden" data-i18n="common.language">Language</span><span aria-hidden="true">🌐</span><select class="language-select" data-language-select aria-label="Language"><option value="en">English</option><option value="zh-Hans">简体中文</option><option value="zh-Hant">繁體中文</option><option value="ja">日本語</option><option value="de">Deutsch</option><option value="fr">Français</option><option value="es">Español</option><option value="ko">한국어</option></select></label>
+        </div>
     </header>
 
     <main class="content-page">
-        <p class="eyebrow">We’re here to help</p>
-        <h1>Support</h1>
-        <p class="lead">Questions, feedback, or trouble with the game? Email us and we’ll do our best to help.</p>
+        <p class="eyebrow" data-i18n="support.eyebrow">We’re here to help</p>
+        <h1 data-i18n="common.support">Support</h1>
+        <p class="lead" data-i18n="support.lead">Questions, feedback, or trouble with the game? Email us and we’ll do our best to help.</p>
 
         <section class="card contact-card">
-            <h2>Contact us</h2>
+            <h2 data-i18n="support.contactUs">Contact us</h2>
             <p><a class="email" href="mailto:fluffypartygame.support@gmail.com?subject=Undercover%20Support">fluffypartygame.support@gmail.com</a></p>
-            <p>For faster support, include your device model, iOS version, app version, and a short description of the issue.</p>
+            <p data-i18n="support.contactHint">For faster support, include your device model, iOS version, app version, and a short description of the issue.</p>
         </section>
 
         <section class="faq">
-            <h2>Frequently asked questions</h2>
+            <h2 data-i18n="support.faq">Frequently asked questions</h2>
 
             <details>
-                <summary>How do I restore an in-app purchase?</summary>
-                <p>Open the game’s purchase screen and choose Restore Purchases. Make sure you are signed in with the same Apple Account used for the original purchase. You will not be charged again.</p>
+                <summary data-i18n="support.restoreQuestion">How do I restore an in-app purchase?</summary>
+                <p data-i18n="support.restoreAnswer">Open the game’s purchase screen and choose Restore Purchases. Make sure you are signed in with the same Apple Account used for the original purchase. You will not be charged again.</p>
             </details>
 
             <details>
-                <summary>Does the game require an internet connection?</summary>
-                <p>Normal gameplay works offline. An internet connection may be required when purchasing or restoring in-app purchases through Apple.</p>
+                <summary data-i18n="support.internetQuestion">Does the game require an internet connection?</summary>
+                <p data-i18n="support.internetAnswer">Normal gameplay works offline. An internet connection may be required when purchasing or restoring in-app purchases through Apple.</p>
             </details>
 
             <details>
-                <summary>Does the game collect personal data?</summary>
-                <p>We do not operate user accounts, advertising, analytics, or crash-reporting services. See our <a href="privacy.html">Privacy Policy</a> for details.</p>
+                <summary data-i18n="support.dataQuestion">Does the game collect personal data?</summary>
+                <p><span data-i18n="support.dataAnswer">We do not operate user accounts, advertising, analytics, or crash-reporting services.</span> <a href="privacy.html" data-i18n="support.seePrivacy">See our Privacy Policy for details.</a></p>
             </details>
 
             <details>
-                <summary>How many people can play?</summary>
-                <p>Undercover supports 3–10 players sharing one device.</p>
+                <summary data-i18n="support.playersQuestion">How many people can play?</summary>
+                <p data-i18n="support.playersAnswer">Undercover supports 3–10 players sharing one device.</p>
             </details>
         </section>
     </main>
 
     <footer>
-        <p>© 2026 Undercover. All rights reserved.</p>
-        <p><a href="privacy.html">Privacy Policy</a></p>
+        <p data-i18n="common.copyright">© 2026 Undercover. All rights reserved.</p>
+        <p><a href="privacy.html" data-i18n="common.privacyPolicy">Privacy Policy</a></p>
     </footer>
 </body>
 </html>
